@@ -1,0 +1,53 @@
+.banner {
+  background-image: linear-gradient(108.36deg, #1BC8D8 14.84%, #54C7E8 86.23%);
+}
+
+.banner__content {
+  padding: 20px;
+}
+
+.banner__title {
+  color: #fff;
+  font-size: 62px;
+  line-height: 66px;
+  font-weight: 400;
+}
+
+.banner__cubtitle {
+  margin: 0;
+  color: #1C626B;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.banner__text {
+  color: #1C8594;
+}
+
+.banner__btn {
+  display: inline-block;
+  padding: 14px 18px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #6B6B6B;
+  box-shadow: 0px 10px 14px rgba(102, 175, 185, 0.78);
+  background-image: linear-gradient(96.37deg, #FFFFFF 15.76%, #FFFFFF 98.76%);
+}
+
+@media (min-width: 768px) {
+  .banner__wrapper {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .banner__btn {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__wrapper {
+    @include container;
+  }
+}

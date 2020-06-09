@@ -16,7 +16,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github-token: $arthouse
+  github-token: $hear
   local_dir: build
   on:
     branch: master
