@@ -1,0 +1,127 @@
+.header {
+  padding: 10px 20px;
+}
+
+.header__info {
+  text-align: center;
+  color: #fff;
+}
+
+.header__city {
+  font-size: 16px;
+
+  select {
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #1BC8D8;
+    background-color: transparent;
+  }
+
+  option {
+    background-color: #1c8594;
+  }
+}
+
+.header__address {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px 0 5px 30px;
+  font-size: 18px;
+  background-image: url("../img/icon-pin.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    svg {
+      fill: darken(#1BC8D8, 10%);
+    }
+  }
+}
+
+.header__nav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: #bdf0ff;
+  border-radius: 5px;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0px 0px 5px 0px #1c8594;
+  }
+
+  &--active {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    position: relative;
+    padding: 0;
+    background-image: linear-gradient(164.56deg, #1BC8D8 14.84%, #54C7E8 86.23%);
+  }
+
+  .header__white-wrapper {
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+
+  .header__logo {
+    @include container;
+  }
+
+  .header__nav-btn {
+    display: none;
+  }
+
+  .header__info {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 170px;
+    color: #000;
+  }
+
+  .header__phone {
+    color: #696767;
+  }
+
+  .header__address {
+    margin: 10px 50px;
+  }
+
+  .header__city {
+
+    select {
+      color: #1BC8D8;
+      background-color: transparent;
+    }
+
+    option {
+      background-color: transparent;
+    }
+  }
+
+}
