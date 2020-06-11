@@ -1,5 +1,8 @@
 .banner {
-  background-image: linear-gradient(108.36deg, #1BC8D8 14.84%, #54C7E8 86.23%);
+  background-image: url("../img/banner-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner__content {
@@ -61,6 +64,11 @@
 }
 
 @media (min-width: 1024px) {
+  .banner {
+    margin-top: -64px;
+    padding-top: 64px;
+  }
+
   .banner__wrapper {
     @include container;
   }
