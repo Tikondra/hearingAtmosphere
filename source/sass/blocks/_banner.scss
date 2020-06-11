@@ -1,5 +1,9 @@
 .banner {
   background-image: linear-gradient(108.36deg, #1BC8D8 14.84%, #54C7E8 86.23%);
+
+  img {
+    min-width: 628px;
+  }
 }
 
 .banner__content {
