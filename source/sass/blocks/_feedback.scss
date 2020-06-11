@@ -1,0 +1,127 @@
+.feedback {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.feedback__description {
+  max-width: 450px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.feedback__title {
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #1C626B;
+
+  span {
+    color: #1DB9C8;
+    font-weight: 700;
+  }
+}
+
+.feedback__text {
+  color: #1C8594;
+}
+
+.feedback__form {
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+  margin-bottom: -20px;
+  padding: 20px;
+  background: #FFFEFE;
+  box-shadow: 0px 13px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.feedback__form-title {
+  margin-top: 0;
+  color: #1C626B;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+
+  span {
+    color: #1DB9C8;
+    font-weight: 700;
+  }
+}
+
+.feedback__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #F6F6F6;
+  border: 1px solid #EEEFEF;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #1C626B;
+}
+
+.feedback__btn {
+  border: none;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .feedback__form {
+    position: relative;
+    padding: 60px;
+    margin-top: 60px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: -70px;
+      width: 150px;
+      height: 200px;
+      background-image: url("../img/form-img2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -80px;
+      right: -80px;
+      width: 180px;
+      height: 180px;
+      background-image: url("../img/form-img1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .feedback__input {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feedback {
+    padding: 310px 0 0;
+    margin-top: -220px;
+    background-image: url("../img/form-back.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .feedback__wrapper {
+    @include container;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .feedback__description {
+    margin-top: 0;
+  }
+
+  .feedback__title {
+    margin: 0;
+  }
+}

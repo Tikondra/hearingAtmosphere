@@ -69,6 +69,7 @@
 
 .our-offers__img {
   display: none;
+  max-height: 779px;
 }
 
 @media (min-width: 1100px) {
@@ -81,17 +82,29 @@
 
   .our-offers__wrapper {
     @include container;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 0;
     display: flex;
   }
 
   .our-offers__img {
     display: block;
-    margin-left: -100px;
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-offers__wrapper {
+    padding-top: 70px;
   }
 
-  .our-offers__item {
+  .our-offers__img {
+    margin-left: -70px;
+  }
+}
 
+@media (min-width: 1440px) {
+  .our-offers__img {
+    margin-left: -130px;
   }
 }

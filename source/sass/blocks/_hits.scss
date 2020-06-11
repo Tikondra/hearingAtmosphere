@@ -9,6 +9,23 @@
   @include list;
 }
 
+.hits__item-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1C8594;
+
+  span {
+    color: #1C626B;
+    font-weight: 700;
+  }
+}
+
+.hits__price {
+  color: #1C8594;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .hits__description {
   max-width: 370px;
   margin: auto;
@@ -30,9 +47,6 @@
 }
 
 .hits__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: auto;
   margin-top: 20px;
   padding: 20px;
@@ -40,6 +54,7 @@
   background-color: #fff;
   box-shadow: 0px 14px 19px rgba(0, 0, 0, 0.11);
   border-radius: 20px;
+  text-align: center;
 
   img {
     margin: auto;
