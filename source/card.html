@@ -75,40 +75,66 @@
       </div>
     </header>
     <main>
-      <section class="brands brands--page">
-        <div class="brands__wrapper">
-          <div class="brands__description">
-            <h1 class="brands__page-title">Слуховые аппараты</h1>
-            <ul class="breadscrums">
-              <li class="breadscrums__item">
-                <a class="breadscrums__link" href="index.html">Главная</a>
-              </li>
+      <section class="card">
+        <ul class="breadscrums">
+          <li class="breadscrums__item">
+            <a class="breadscrums__link" href="index.html">Главная</a>
+          </li>
 
-              <li class="breadscrums__item">
-                <a class="breadscrums__link">Слуховые аппараты</a>
-              </li>
-            </ul>
+          <li class="breadscrums__item">
+            <a class="breadscrums__link" href="catalog.html">Слуховые аппараты</a>
+          </li>
+
+          <li class="breadscrums__item">
+            <a class="breadscrums__link" href="">Bernafon</a>
+          </li>
+
+          <li class="breadscrums__item">
+            <a class="breadscrums__link">RESOUND MATCH 80</a>
+          </li>
+        </ul>
+        <div class="card__content">
+          <div class="card__img">
+            <img src="img/card.png" width="" height="" alt="RESOUND MATCH 80">
           </div>
-          <ul class="brands__list">
-            <li class="brands__item">
-              <img src="img/widex.png" width="286" height="277" alt="Слуховые аппараты Widex">
-              <h3 class="brands__item-title">Слуховые аппараты <br>Widex</h3>
-              <a class="brands__link blue-btn" href="catalog.html">Перейти в каталог</a>
+          <div class="card__info">
+            <h1 class="card__title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h1>
+            <p class="card__price">11 280 ₽</p>
+            <p class="card__description">
+              Компактный цифровой заушный слуховой аппарат для компенсации I – II степеней потери слуха. Работает на 312 батарейке.
+            </p>
+            <p class="card__parameter"><span>Производитель:</span> Resound</p>
+            <p class="card__parameter"><span>Тип корпуса:</span> Заушный (BTE)</p>
+            <p class="card__parameter"><span>Уровень мощности:</span> Средней мощности</p>
+            <p class="card__parameter"><span>Тип обработки сигнала:</span> Цифровой</p>
+            <a class="blue-btn card__btn" href="">Заказать</a>
+          </div>
+        </div>
+        <div class="card-description">
+          <h2 class="card-description__title">
+            Подробное описание:
+            <svg class="card-description__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="none">
+              <use xlink:href="#icon-blue-arrow"></use>
+            </svg>
+          </h2>
+          <ul class="card-description__list">
+            <li class="card-description__item">
+              <h3 class="card-description__item-title">Разборчивость речи во всех звуковых ситуациях:</h3>
+              <p class="card-description__item-text">
+                Проверенная на практике Бесканальная цифровая обработка в&nbsp;сочетании с&nbsp;качественными характеристиками улучшает разборчивость речи
+              </p>
             </li>
-            <li class="brands__item">
-              <img src="img/bernafon.png" width="290" height="277" alt="Слуховые аппараты Bernafon">
-              <h3 class="brands__item-title">Слуховые аппараты <br>Bernafon</h3>
-              <a class="brands__link blue-btn" href="catalog.html">Перейти в каталог</a>
+            <li class="card-description__item">
+              <h3 class="card-description__item-title">Комфорт в шумной обстановке:</h3>
+              <p class="card-description__item-text">
+                Качество адаптивных свойств минимизирует окружающий шум, и&nbsp;следовательно, обеспечивает комфорт в&nbsp;разных звуковых ситуациях
+              </p>
             </li>
-            <li class="brands__item">
-              <img src="img/resound.png" width="286" height="277" alt="Слуховые аппараты ReSound">
-              <h3 class="brands__item-title">Слуховые аппараты <br>ReSound</h3>
-              <a class="brands__link blue-btn" href="catalog.html">Перейти в каталог</a>
-            </li>
-            <li class="brands__item">
-              <img src="img/istok.png" width="286" height="277" alt="Слуховые аппараты Исток-Аудио">
-              <h3 class="brands__item-title">Слуховые аппараты <br>Исток-Аудио</h3>
-              <a class="brands__link blue-btn" href="catalog.html">Перейти в каталог</a>
+            <li class="card-description__item">
+              <h3 class="card-description__item-title">Подавление обратной связи:</h3>
+              <p class="card-description__item-text">
+                Система современного адаптивного устранения обратной связи предотвращает появление свиста, не&nbsp;представляя угрозы ни&nbsp;для понимания речи, ни&nbsp;для комфорта
+              </p>
             </li>
           </ul>
         </div>
@@ -203,4 +229,18 @@
     </footer>
     <script src="js/script.min.js"></script>
   </body>
+  <section class="modal-order">
+    <form class="modal-order__form">
+      <h2 class="modal-order__title">
+      Заполните форму и мы свяжемся с&nbsp;вами <span>в ближайшее время</span>
+      </h2>
+      <p class="modal-order__text">Ваш заказ: <span>RESOUND MATCH&nbsp;80</span></p>
+      <input class="modal-order__input" type="text" name="name" placeholder="Ваше ФИО">
+      <input class="modal-order__input" type="tel" name="phone" placeholder="Ваш номер телефона">
+      <button class="modal-order__btn blue-btn" type="submit">Отправить заявку</button>
+      <button class="modal-order__close" type="button"></button>
+    </form>
+
+
+  </section>
 </html>

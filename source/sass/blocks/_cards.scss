@@ -1,0 +1,15 @@
+.cards {
+  @include list;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards__item {
+    margin: 0 auto 20px;
+  }
+}

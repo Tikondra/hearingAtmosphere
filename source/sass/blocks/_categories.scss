@@ -1,0 +1,19 @@
+.categories__title {
+  font-weight: 400;
+  color: #3F3F3F
+}
+
+.categories__list {
+  @include list;
+}
+
+.categories__link {
+  color: #1c8594;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .categories__item {
+    margin: 10px 0;
+  }
+}

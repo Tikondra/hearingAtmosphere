@@ -1,0 +1,29 @@
+.catalog {
+  position: relative;
+  padding: 20px 0;
+}
+
+.catalog__filter-btn {
+  padding: 15px 30px 15px 10px;
+  color: #bdf0ff;
+  background-color: #1c8594;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-image: url("../img/arrow-forward.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (min-width: 1024px) {
+  .catalog__filter-btn {
+    display: none;
+  }
+
+  .catalog {
+    @include container;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

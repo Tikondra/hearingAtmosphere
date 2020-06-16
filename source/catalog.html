@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Атмосфера Слуха</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="header__white-wrapper">
+        <div class="header__logo">
+          <a href="index.html"><img src="img/logo.svg" width="245" height="71" alt="Атмосфера Слуха"></a>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">О компании</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">Услуги</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__link--active" href="">Слуховые аппараты</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">Аксессуары</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">Скидки</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__info">
+            <label class="header__city">Ваш город:
+              <select>
+                <option>Астрахань</option>
+                <option>Саратов</option>
+                <option>Ставраполь</option>
+                <option>Тюмень</option>
+              </select>
+            </label>
+            <p class="header__address">ул. Боевая, 14</p>
+            <a class="header__phone" href="tel:88002010672">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#1BC8D8">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              8 (800) 201-06-72
+            </a>
+          </div>
+        </nav>
+        <button class="header__nav-btn" type="button">
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
+        <button class="catalog__filter-btn" type="button">Фильтр</button>
+        <section class="filters">
+          <form class="filters__form" action="" method="">
+            <h2 class="filters__main-title">Фильтр</h2>
+
+            <nav class="categories">
+              <h3 class="categories__title">Бренды</h3>
+              <ul class="categories__list">
+              <!-- категории -->
+                <li class="categories__item">
+                  <a class="categories__link" href="">Widex</a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="">Bernafon</a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="">ReSound</a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="">Исток-Аудио</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="filters__list">
+              <!-- фильтры -->
+              <li class="filters__item">
+                <h3 class="filters__title">Тип корпуса</h3>
+                <ul class="filters__checkboxes checkboxes">
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Внутриканальный" value="Внутриканальный" id="type1">
+                    <label class="checkboxes__label" for="type1">
+                      <div class="checkboxes__check"></div>
+                      Внутриканальный
+                    </label>
+                  </li>
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Внутриушные" value="Внутриушные" id="type2">
+                    <label class="checkboxes__label" for="type2">
+                      <div class="checkboxes__check"></div>
+                      Внутриушные
+                    </label>
+                  </li>
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Заушные" value="Заушные" id="type3">
+                    <label class="checkboxes__label" for="type3">
+                      <div class="checkboxes__check"></div>
+                      Заушные
+                    </label>
+                  </li>
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Карманные" value="Карманные" id="type4">
+                    <label class="checkboxes__label" for="type4">
+                      <div class="checkboxes__check"></div>
+                      Карманные
+                    </label>
+                  </li>
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Микрозаушный" value="Микрозаушный" id="type5">
+                    <label class="checkboxes__label" for="type5">
+                      <div class="checkboxes__check"></div>
+                      Микрозаушный
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filters__item">
+                <h3 class="filters__title">Мощность</h3>
+                <ul class="filters__checkboxes checkboxes">
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Очень мощный" value="Очень мощный" id="very-strong">
+                    <label class="checkboxes__label" for="very-strong">
+                      <div class="checkboxes__check"></div>
+                      Очень мощный
+                    </label>
+                  </li>
+
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Мощный" value="Мощный" id="strong">
+                    <label class="checkboxes__label" for="strong">
+                      <div class="checkboxes__check"></div>
+                      Мощный
+                    </label>
+                  </li>
+
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Средней мощности" value="Средней мощности" id="middle">
+                    <label class="checkboxes__label" for="middle">
+                      <div class="checkboxes__check"></div>
+                      Средней мощности
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="filters__item">
+                <h3 class="filters__title">Обработка звука</h3>
+                <ul class="filters__checkboxes checkboxes">
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Аналоговые" value="Аналоговые" id="analog">
+                    <label class="checkboxes__label" for="analog">
+                      <div class="checkboxes__check"></div>
+                      Аналоговые
+                    </label>
+                  </li>
+                  <li class="checkboxes__item">
+                    <input class="checkboxes__input visually-hidden" type="checkbox" name="Цифровые" value="Цифровые" id="digital">
+                    <label class="checkboxes__label" for="digital">
+                      <div class="checkboxes__check"></div>
+                      Цифровые
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="filters__btn-box">
+              <button class="blue-btn filters__btn" type="submit">Показать</button>
+              <button class="blue-btn filters__btn filter__btn--reset" type="reset">Очистить</button>
+            </div>
+            <button class="filters__btn-close" type="button">Х</button>
+          </form>
+        </section>
+        <section class="board">
+          <h1 class="board__title">Слуховые аппараты</h1>
+          <ul class="breadscrums">
+            <li class="breadscrums__item">
+              <a class="breadscrums__link" href="index.html">Главная</a>
+            </li>
+
+            <li class="breadscrums__item">
+              <a class="breadscrums__link">Слуховые аппараты</a>
+            </li>
+          </ul>
+          <ul class="cards">
+            <!-- карточки -->
+            <li class="hits__item cards__item">
+              <img src="img/hit1.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item cards__item">
+              <img src="img/hit2.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item cards__item">
+              <img src="img/hit3.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item cards__item">
+              <img src="img/hit1.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item cards__item">
+              <img src="img/hit2.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item cards__item">
+              <img src="img/hit3.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+          </ul>
+          <button class="board__btn-more" type="button">Показать еще</button>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <img src="img/logo-w.svg" width="245" height="71" alt="Атмосфера Слуха">
+          <p class="footer__address">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#fff">
+              <use xlink:href="#icon-pin"></use>
+            </svg>
+            ул. Боевая, 14
+          </p>
+          <a class="footer__phone" href="tel:88002010672">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#fff">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            8 (800) 201-06-72
+          </a>
+        </div>
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <span>Страницы</span>
+              <ul class="footer__navigation-sublist">
+                <li>
+                  <a class="footer__navigation-link footer__navigation-link--active" href="">Главная</a>
+                </li>
+
+                <li>
+                  <a class="footer__navigation-link" href="">О компании</a>
+                </li>
+
+                <li>
+                  <a class="footer__navigation-link" href="">Скидки</a>
+                </li>
+
+                <li>
+                  <a class="footer__navigation-link" href="">Контакты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__navigation-item">
+              <span>Услуги</span>
+              <ul class="footer__navigation-sublist">
+                <li>
+                  <a>Проверка слуха</a>
+                </li>
+
+                <li>
+                  <a>Выезд на дом</a>
+                </li>
+
+                <li>
+                  <a>Бесплатная консультация</a>
+                </li>
+
+                <li>
+                  <a>Компенсация от ФСС</a>
+                </li>
+
+                <li>
+                  <a>Беспроцентная рассрочка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__navigation-item">
+              <span>Продукция</span>
+              <ul class="footer__navigation-sublist">
+                <li>
+                  <a>Слуховые аппараты</a>
+                </li>
+
+                <li>
+                  <a>Реабилитационная техника</a>
+                </li>
+
+                <li>
+                  <a>Элементы питания</a>
+                </li>
+
+                <li>
+                  <a>Средства по уходу</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
