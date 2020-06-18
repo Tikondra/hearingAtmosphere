@@ -1,9 +1,23 @@
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(71, 196, 227, 0.66);
+
+  &--show {
+    display: block;
+  }
+}
+
 .modal-order {
-  // position: fixed;
+  position: fixed;
   top: 50%;
-  // margin-top: -260px;
+  margin-top: -250px;
   padding: 20px;
-  // height: 530px;
 }
 
 .modal-order__form {
@@ -74,4 +88,50 @@
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 5px 10px 0px #00000030;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .modal-order {
+    left: 50%;
+    margin-left: -250px;
+  }
+
+  .modal-order__form {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-order__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .modal-order__form {
+    position: relative;
+    padding: 70px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -70px;
+      left: -100px;
+      width: 214px;
+      height: 224px;
+      background-image: url("../img/form-eclipse.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+
+  .modal-order__close {
+    top: -50px;
+    right: -80px;
+
+    &:hover {
+      box-shadow: 0 5px 10px 0px #00000059
+    }
+  }
 }

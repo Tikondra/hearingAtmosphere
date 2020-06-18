@@ -13,8 +13,8 @@
   });
 })();
 
+// фильтр
 if (document.querySelector('.filters')) {
-  // фильтр
   var filters = document.querySelector('.filters');
   var filterOpen = document.querySelector('.catalog__filter-btn');
   var filterClose = filters.querySelector('.filters__btn-close');
@@ -28,6 +28,7 @@ if (document.querySelector('.filters')) {
   });
 };
 
+// описание
 if (document.querySelector('.card-description')) {
   var description = document.querySelector('.card-description');
   var openBtn = description.querySelector('.card-description__open');
@@ -38,4 +39,39 @@ if (document.querySelector('.card-description')) {
     openBtn.classList.toggle('card-description__open--active');
     description.classList.toggle('card-description--show');
   })
+}
+
+// форма заказа
+if (document.querySelector('.card')) {
+  var modal = document.querySelector('.overlay');
+  var open = document.querySelector('.card__btn');
+  var close = modal.querySelector('.modal-order__close');
+  var body = document.querySelector('body');
+
+  open.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.add('overlay--show');
+    body.classList.add('scroll-stop');
+  })
+
+  close.addEventListener('click', function () {
+    modal.classList.remove('overlay--show');
+    body.classList.remove('scroll-stop');
+  })
+
+  modal.addEventListener('click', function(evt) {
+    console.log(evt.target)
+    if (evt.target === modal) {
+      modal.classList.remove('overlay--show');
+      body.classList.remove('scroll-stop');
+    }
+  })
+
+  document.addEventListener('keydown', function (evt) {
+
+    if (evt.keyCode === 27) {
+      modal.classList.remove('overlay--show');
+      body.classList.remove('scroll-stop');
+    }
+  });
 }
