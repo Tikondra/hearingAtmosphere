@@ -2,6 +2,10 @@
   @include list;
   display: flex;
   margin-bottom: 30px;
+
+  &--contacts {
+    margin: 10px 0;
+  }
 }
 
 .breadscrums__link {

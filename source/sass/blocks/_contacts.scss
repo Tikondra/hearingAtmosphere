@@ -1,0 +1,44 @@
+.contacts {
+  background-color: #F5F5F5;
+}
+
+.contacts__header {
+  padding: 20px;
+}
+
+.contacts__page-title {
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #1C626B;
+}
+
+.contacts__city {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  select {
+    margin-left: 10px;
+    border: none;
+    color: #1C626B;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__header {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__page-title {
+    width: 100%;
+  }
+}
