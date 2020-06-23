@@ -35,10 +35,10 @@
               <a class="navigation__link" href="accessory.html">Аксессуары</a>
             </li>
             <li>
-              <a class="navigation__link" href="sale.html">Скидки</a>
+              <a class="navigation__link navigation__link--active">Скидки</a>
             </li>
             <li>
-              <a class="navigation__link navigation__link--active">Контакты</a>
+              <a class="navigation__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
           <div class="header__info">
@@ -55,7 +55,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#1BC8D8">
                 <use xlink:href="#icon-phone"></use>
               </svg>
-              8 (800) 201-06-72
+              <span>8 (800) 201-06-72</span>
             </a>
           </div>
         </nav>
@@ -75,55 +75,47 @@
       </div>
     </header>
     <main>
-      <section class="contacts">
-        <div class="contacts__header">
-          <h1 class="contacts__page-title">Контакты</h1>
-          <ul class="breadscrums breadscrums--contacts">
+      <section class="sale">
+        <div class="sale__wrapper">
+          <h1 class="sale__title">Специальные предложения</h1>
+          <ul class="breadscrums">
             <li class="breadscrums__item">
               <a class="breadscrums__link" href="index.html">Главная</a>
             </li>
 
             <li class="breadscrums__item">
-              <a class="breadscrums__link">Контакты</a>
+              <a class="breadscrums__link">Специальные предложения</a>
             </li>
           </ul>
-          <label class="contacts__city">Ваш город:
-            <select>
-              <option value="Astrachan">Астрахань</option>
-              <option value="Saratov">Саратов</option>
-              <option value="Stavrapol">Ставраполь</option>
-              <option value="Tymen">Тюмень</option>
-            </select>
-          </label>
-        </div>
+          <ul class="hits__list">
+            <li class="hits__item">
+              <img src="img/hit1.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
 
-        <div class="map">
-          <div class="map__info">
-            <h2 class="map__title">Мы находимся:</h2>
-            <p class="map__address">ул. Боевая, 14</p>
-            <a class="map__phone map__phone--1" href="tel:89881728776">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#1BC8D8">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-              <span>+7 (988) 172-87-76</span>
-            </a>
-            <a class="map__phone map__phone--2" href="tel:88512428776">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#1BC8D8">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-              <span>+7 (8512) 42-87-76</span>
-            </a>
-            <h3 class="map__time-title">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#1BC8D8">
-                <use xlink:href="#icon-clock"></use>
-              </svg>
-              Время работы:
-            </h3>
-            <p class="map__time">ПН-ПТ: с 9.00 до 18.00, без обеда</p>
-            <p class="map__time">СБ: с 9.00 до 13.00</p>
-            <a class="blue-btn map__btn js-open" href="">Получить консультацию</a>
-          </div>
-          <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQheTtVcB"></iframe>
+            <li class="hits__item">
+              <img src="img/hit2.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item">
+              <img src="img/hit3.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+
+            <li class="hits__item">
+              <img src="img/hit3.jpg" width="" height="" alt="">
+              <h3 class="hits__item-title">Слуховой аппарат: <span>RESOUND MATCH 80</span></h3>
+              <p class="hits__price">11 208 ₽</p>
+              <a class="hits__btn blue-btn" href="card.html">Подробнее</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -141,7 +133,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18" fill="#fff">
               <use xlink:href="#icon-phone"></use>
             </svg>
-            8 (800) 201-06-72
+            <span>8 (800) 201-06-72</span>
           </a>
         </div>
         <nav class="footer__navigation">
@@ -214,19 +206,6 @@
         </nav>
       </div>
     </footer>
-    <div class="overlay">
-      <section class="modal-order" id="order">
-        <form class="modal-order__form">
-          <h2 class="modal-order__title">
-          Заполните форму и мы свяжемся с&nbsp;вами <span>в&nbsp;ближайшее время</span>
-          </h2>
-          <input class="modal-order__input" type="text" name="name" placeholder="Ваше ФИО">
-          <input class="modal-order__input" type="tel" name="phone" placeholder="Ваш номер телефона">
-          <button class="modal-order__btn blue-btn" type="submit">Отправить заявку</button>
-          <button class="modal-order__close" type="button"></button>
-        </form>
-      </section>
-    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>

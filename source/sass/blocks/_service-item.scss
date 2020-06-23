@@ -1,0 +1,30 @@
+.cervice-item {
+  background-image: url("../img/brands-back-m.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.cervice-item__wrapper {
+  padding: 20px;
+}
+
+.cervice-item-title {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #3F3F3F;
+}
+
+@media (min-width: 1100px) {
+  .cervice-item {
+    margin-top: -85px;
+    background-position: top right;
+  }
+
+  .cervice-item__wrapper {
+    @include container;
+    padding: 110px 20px;
+  }
+}
