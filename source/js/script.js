@@ -97,13 +97,6 @@ if (document.querySelector('#order')) {
       phoneLink1.href = 'tel:89881728776';
       phoneLink2.href = 'tel:88512428776';
     }
-    if (val === 'Saratov') {
-      address.textContent = 'ул. Чернышевского, 203';
-      phone1.textContent = '+7(908) 551–63–60';
-      phone2.textContent = '+7(8452) 71–25–10';
-      phoneLink1.href = 'tel:89085516360';
-      phoneLink2.href = 'tel:88452712510';
-    }
     if (val === 'Stavrapol') {
       address.textContent = 'ул. Мира, 276';
       phone1.textContent = '+7(962) 455–82–99';
@@ -124,10 +117,6 @@ if (document.querySelector('#order')) {
     if (val === 'Astrachan') {
       headerAddress.textContent = 'ул. Боевая, 14';
       footerAddress.textContent = 'ул. Боевая, 14';
-    }
-    if (val === 'Saratov') {
-      headerAddress.textContent = 'ул. Чернышевского, 203';
-      footerAddress.textContent = 'ул. Чернышевского, 203';
     }
     if (val === 'Stavrapol') {
       headerAddress.textContent = 'ул. Мира, 276';
